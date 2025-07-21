@@ -1,4 +1,4 @@
-# BTG Challenge
+# Rabbitmq Order Handler
 
 Este projeto é uma aplicação backend desenvolvida em Java com Spring Boot para gerenciamento de pedidos. Ele utiliza
 RabbitMQ para processamento assíncrono de pedidos e oferece uma API REST para criação e consulta do status dos mesmos.
@@ -57,7 +57,3 @@ São configurados parâmetros como:
 - `domain/` - Modelos de domínio, enums e serviços de negócio
 - `infrastructure/messaging/` - Componentes para envio e recebimento de mensagens RabbitMQ
 - `exception/` - Exceções personalizadas para controle de erros
-
----
-
-Projeto desenvolvido para o desafio técnico BTG Pactual.
