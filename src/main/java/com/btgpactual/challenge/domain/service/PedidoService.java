@@ -34,7 +34,7 @@ public class PedidoService {
 	}
 
 	public void processarPedido(UUID pedidoId) throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		store.atualizarStatus(pedidoId, StatusPedido.PROCESSADO);
 	}
 }

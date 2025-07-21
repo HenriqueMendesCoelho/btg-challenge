@@ -22,8 +22,8 @@ public class RabbitMQConfig {
 		factory.setTaskExecutor(Executors.newVirtualThreadPerTaskExecutor());
 		factory.setConnectionFactory(connectionFactory);
 		factory.setPrefetchCount(20);
-		factory.setConcurrentConsumers(10);
-		factory.setMaxConcurrentConsumers(30);
+		factory.setConcurrentConsumers(1);
+		factory.setMaxConcurrentConsumers(8);
 		return factory;
 	}
 

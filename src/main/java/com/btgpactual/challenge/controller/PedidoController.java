@@ -26,7 +26,7 @@ public class PedidoController {
 		return ResponseEntity.ok().body(new PedidoResponseDto(pedido));
 	}
 
-	@GetMapping("/status/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<PedidoResponseDto> statusPedido(@PathVariable UUID id) {
 		try {
 			Pedido pedido = service.consultarStatus(id);
