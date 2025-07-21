@@ -1,4 +1,4 @@
-# Async Challenge
+# BTG Challenge
 
 Este projeto é uma aplicação backend desenvolvida em Java com Spring Boot para gerenciamento de pedidos. Ele utiliza
 RabbitMQ para processamento assíncrono de pedidos e oferece uma API REST para criação e consulta do status dos mesmos.
