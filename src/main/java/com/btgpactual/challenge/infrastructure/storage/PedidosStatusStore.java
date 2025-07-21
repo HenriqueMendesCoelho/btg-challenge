@@ -16,7 +16,7 @@ public class PedidosStatusStore {
 		statusMap.put(pedidoId, status);
 	}
 
-	public String consultarStatus(UUID pedidoId) {
-		return statusMap.getOrDefault(pedidoId, StatusPedido.NAO_ENCONTRADO).getDescription();
+	public StatusPedido consultarStatus(UUID pedidoId) {
+		return statusMap.getOrDefault(pedidoId, StatusPedido.NAO_ENCONTRADO);
 	}
 }

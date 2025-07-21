@@ -9,7 +9,6 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.http.codec.json.Jackson2JsonDecoder;
 
 import java.text.SimpleDateFormat;
 import java.util.TimeZone;
@@ -28,11 +27,6 @@ public class MapperConfig {
 				.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
 				.enable(SerializationFeature.WRITE_DATES_WITH_ZONE_ID)
 				.setTimeZone(TimeZone.getTimeZone("America/Sao_Paulo"));
-	}
-
-	@Bean
-	Jackson2JsonDecoder jackson2JsonDecoder() {
-		return new Jackson2JsonDecoder(objectMapper());
 	}
 
 }
